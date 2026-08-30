@@ -23,7 +23,9 @@ export default function Home() {
 
         <div className="hold-page__tagline-block">
           <p className="hold-page__tagline">
-            Partnership-oriented consulting and future-focused software solutions
+            Partnership-oriented consulting
+            <br />
+            future-focused software solutions
             <span style={{ color: "var(--sunflower)" }}>.</span>
           </p>
           <div style={{ width: 64, height: 4, background: "var(--royal-blue)" }} />
@@ -68,7 +70,7 @@ export default function Home() {
         </div>
 
         <p className="hold-page__footnote">
-          This is a temporary page. The full milktruck.io site is being built — in the meantime, reach out anytime.
+          This is a temporary page. The milktruck.io site is being built, reach out anytime.
         </p>
       </main>
 
