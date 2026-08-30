@@ -1,0 +1,66 @@
+/* Milktruck typography. Two voices:
+   DISPLAY - Bungee, hand-painted sign lettering. Headlines, section heads, card titles.
+             Uppercase, single weight, slanted on hero headlines only.
+   BODY/UI - Archivo. Reading copy at normal width; buttons, eyebrows, badges, nav, tabs,
+             field labels and step numerals at font-stretch 75%, weight 700. */
+:root{
+  --font-display:"Bungee","Archivo",Helvetica,Arial,sans-serif;
+  --font-body:"Archivo","GT America",Helvetica,Arial,sans-serif;
+  --font-ui:"Archivo","Archivo Narrow","GT America Condensed",Helvetica,Arial,sans-serif;
+  --font-mono:"Roboto Mono",ui-monospace,Menlo,monospace;
+
+  --stretch-condensed:75%;
+  --stretch-normal:100%;
+
+  --weight-regular:400;
+  --weight-medium:500;
+  --weight-bold:700;
+  --weight-black:800;
+
+  /* type scale */
+  /* Bungee is very wide and very heavy — the display scale sits well below what a
+     condensed grotesque needs at the same optical presence, and lines stay short.
+     Keep hero lines to 2-3 short words; at xl a 46% column fits about 13 characters. */
+  --size-display-xl:40px;
+  --size-display-lg:32px;
+  --size-display-md:26px;
+  --size-display-sm:21px;
+  --size-heading:22px;
+  --size-subheading:18px;
+  --size-body-lg:18px;
+  --size-body:16px;
+  --size-body-sm:14px;
+  --size-label:13px;
+  --size-micro:11px;
+
+  --leading-display:1.14;
+  --leading-heading:1.12;
+  --leading-body:1.55;
+  --leading-tight:1.25;
+
+  --tracking-display:0;
+  --tracking-body:0;
+  --tracking-label:0.10em;
+  --tracking-eyebrow:0.14em;
+
+  /* semantic roles */
+  --type-display-font:var(--font-display);
+  --type-display-stretch:var(--stretch-normal);
+  --type-display-weight:var(--weight-regular);
+  --type-display-transform:uppercase;
+  /* heroes only — never on section heads or card titles. Bungee is upright, so this skew
+     supplies the wordmark lean; it pivots on the block centre and DisplayHeading applies a
+     matching negative margin so the optical left edge still lands on the page margin. */
+  --display-slant:skewX(-8deg);
+  --display-slant-tan:0.1405;
+
+  --type-eyebrow-size:var(--size-label);
+  --type-eyebrow-tracking:var(--tracking-eyebrow);
+
+  --type-button-font:var(--font-ui);
+  --type-button-size:var(--size-label);
+  --type-button-tracking:var(--tracking-label);
+  --type-button-weight:var(--weight-bold);
+
+  --weight-ui-label:var(--weight-bold);
+}

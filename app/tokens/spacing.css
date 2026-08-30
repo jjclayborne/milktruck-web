@@ -1,0 +1,32 @@
+/* Milktruck spacing. 4px base, doubling at the top end for editorial gutters. */
+:root{
+  --space-0:0;
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:20px;
+  --space-6:24px;
+  --space-8:32px;
+  --space-10:40px;
+  --space-12:48px;
+  --space-16:64px;
+  --space-20:80px;
+  --space-24:96px;
+  --space-32:128px;
+
+  /* semantic */
+  --gutter-page:40px;
+  --gutter-page-tight:24px;
+  --section-y:96px;
+  --section-y-tight:64px;
+  --card-pad:24px;
+  --card-pad-lg:32px;
+  --control-pad-x:20px;
+  --control-pad-y:12px;
+  --stack-tight:8px;
+  --stack:16px;
+  --stack-loose:32px;
+  --max-measure:64ch;
+  --max-page:1240px;
+}

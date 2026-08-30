@@ -1,0 +1,11 @@
+/* Milktruck webfonts.
+   DISPLAY: Bungee — drawn from American hand-painted sign lettering, chosen deliberately
+   over the sheet's GT America Condensed Bold for an older, painted-signage headline voice.
+   Single weight (400), uppercase, optionally skewed on heroes. The wordmark is artwork, not
+   type, and is unaffected.
+   BODY / UI: Archivo (variable, wdth 62-125) — reading copy at normal width, small-caps UI
+   type at font-stretch 75%. Stands in for GT America Regular pending licensed files. */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap");

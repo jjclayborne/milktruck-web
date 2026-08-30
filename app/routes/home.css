@@ -1,0 +1,138 @@
+.hold-page {
+  min-height: 100vh;
+  background: var(--cream);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-ui);
+  color: var(--ink-navy);
+}
+
+.hold-page a {
+  color: var(--royal-blue);
+  text-decoration: none;
+}
+
+.hold-page a:hover {
+  color: var(--royal-blue-press);
+  text-decoration: underline;
+}
+
+@keyframes hold-page-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.hold-page__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: clamp(28px, 5vw, 40px);
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: clamp(48px, 9vw, 88px) clamp(24px, 5vw, 40px);
+  box-sizing: border-box;
+  animation: hold-page-rise-in 280ms cubic-bezier(0.2, 0.8, 0.3, 1) both;
+}
+
+.hold-page__logo {
+  width: min(320px, 68vw);
+  height: auto;
+  display: block;
+}
+
+.hold-page__tagline-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: min(560px, 90vw);
+}
+
+.hold-page__tagline {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: clamp(15px, 3.4vw, 24px);
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-wrap: balance;
+  hyphens: none;
+  overflow-wrap: normal;
+  color: var(--royal-blue);
+}
+
+.hold-page__card {
+  background: var(--white);
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(13, 27, 42, 0.08), 0 12px 28px rgba(13, 27, 42, 0.06);
+  padding: clamp(24px, 4vw, 32px);
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.hold-page__identity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.hold-page__name {
+  font-family: var(--font-display);
+  font-size: clamp(19px, 4.4vw, 23px);
+  line-height: 1.14;
+  color: var(--royal-blue);
+  text-transform: uppercase;
+}
+
+.hold-page__role {
+  font-family: var(--font-ui);
+  font-stretch: 75%;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-eyebrow);
+}
+
+.hold-page__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 14px;
+  width: 100%;
+}
+
+.hold-page__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 44px;
+  font-size: 16px;
+}
+
+.hold-page__footnote {
+  margin: 0;
+  max-width: 42ch;
+  font-size: 14px;
+  line-height: 1.55;
+  text-wrap: pretty;
+  color: var(--text-muted);
+}

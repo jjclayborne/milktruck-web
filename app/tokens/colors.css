@@ -1,0 +1,62 @@
+/* Milktruck color system. Five brand colors, taken verbatim from the brand sheet. */
+:root{
+  /* --- base palette --- */
+  --royal-blue:#1E4FA1;
+  --baby-blue:#7FB1D6;
+  --sunflower:#F2C846;
+  --cream:#F6F1E6;
+  --ink-navy:#0D1B2A;
+
+  /* --- tints & shades, derived for states and layering only --- */
+  --royal-blue-press:#183F81;
+  --royal-blue-hover:#245CB8;
+  --royal-blue-08:rgba(30,79,161,.08);
+  --royal-blue-16:rgba(30,79,161,.16);
+  --baby-blue-soft:#BFD8EA;
+  --baby-blue-press:#69A0C9;
+  --sunflower-hover:#F8D66A;
+  --sunflower-press:#DCB235;
+  --cream-deep:#EDE6D6;
+  --cream-edge:#DED5C1;
+  --white:#FFFFFF;
+  --ink-navy-70:rgba(13,27,42,.70);
+  --ink-navy-45:rgba(13,27,42,.45);
+  --ink-navy-12:rgba(13,27,42,.12);
+
+  /* --- semantic surfaces --- */
+  --surface-page:var(--cream);
+  --surface-card:var(--white);
+  --surface-sunken:var(--cream-deep);
+  --surface-inverse:var(--royal-blue);
+  --surface-inverse-deep:var(--ink-navy);
+  --surface-accent:var(--sunflower);
+  --surface-soft:var(--baby-blue);
+
+  /* --- semantic text --- */
+  --text-heading:var(--royal-blue);
+  --text-body:var(--ink-navy);
+  --text-muted:var(--ink-navy-70);
+  --text-on-inverse:var(--cream);
+  --text-on-accent:var(--ink-navy);
+  --text-link:var(--royal-blue);
+  --text-link-hover:var(--royal-blue-press);
+  --text-eyebrow:#C79C1F;
+
+  /* --- borders & lines --- */
+  --border-hairline:var(--ink-navy-12);
+  --border-strong:var(--royal-blue);
+  --rule-accent:var(--royal-blue);
+
+  /* --- semantic status (derived from brand palette, no new hues) --- */
+  --status-info:var(--royal-blue);
+  --status-info-surface:#E4EDF8;
+  --status-success:#2F7A4F;
+  --status-success-surface:#E3F0E8;
+  --status-warning:var(--sunflower);
+  --status-warning-surface:#FBF0D2;
+  --status-danger:#B23A2E;
+  --status-danger-surface:#F7E4E1;
+
+  /* --- focus --- */
+  --focus-ring:var(--sunflower);
+}

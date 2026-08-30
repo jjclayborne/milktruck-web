@@ -1,0 +1,6 @@
+/* Iconography. SUBSTITUTION: no icon set was supplied with the brand sheet; Phosphor Icons
+   is the closest open match to the sheet's heavy geometric glyphs. Bold weight for bare
+   glyphs, Fill weight inside royal badges. Swap these three lines to change icon sets. */
+@import url("https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css");
+@import url("https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css");
+@import url("https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css");
