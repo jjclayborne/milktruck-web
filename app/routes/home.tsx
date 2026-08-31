@@ -74,7 +74,7 @@ export default function Home() {
         </p>
       </main>
 
-      <CheckerStrip size={12} tone="royal" style={{ width: "100%", height: 12 }} />
+      <CheckerStrip size={12} tone="royal" style={{ width: "100%", height: 36 }} />
     </div>
   );
 }

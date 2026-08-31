@@ -1,0 +1,33 @@
+name: Pipeline
+
+on:
+  workflow_run:
+    workflows: [Run Tests]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pipeline-main
+  cancel-in-progress: true
+
+jobs:
+  build-and-push:
+    name: Build and push
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    uses: ./.github/workflows/build-and-push.yml
+    with:
+      app_name: milktruck-web
+      image_tag: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.sha }}
+    secrets: inherit
+
+  deploy:
+    name: Deploy
+    needs: build-and-push
+    uses: ./.github/workflows/deploy.yml
+    with:
+      app_name: milktruck-web
+      image_ref: ${{ needs.build-and-push.outputs.image_ref }}
+      fly_config: fly.toml
+      environment: production
+    secrets: inherit
