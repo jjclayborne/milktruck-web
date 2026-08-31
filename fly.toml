@@ -1,10 +1,10 @@
-# fly.toml app configuration file for milktruck-web
+# fly.toml app configuration file generated for milktruck-web on 2026-08-31T14:46:12Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = 'milktruck-web'
-primary_region = 'dfw'
+primary_region = 'iad'
 
 [build]
 
@@ -17,13 +17,14 @@ primary_region = 'dfw'
   processes = ['app']
 
   [[http_service.checks]]
-    grace_period = "30s"
-    interval = "15s"
-    timeout = "5s"
-    method = "GET"
-    path = "/"
+    interval = '15s'
+    timeout = '5s'
+    grace_period = '30s'
+    method = 'GET'
+    path = '/'
 
 [[vm]]
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
+  memory_mb = 256
