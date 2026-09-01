@@ -5,9 +5,23 @@ import Button from "~/components/Button";
 import "./home.css";
 
 export function meta() {
+  const title = "Milktruck";
+  const description = "Milktruck — the full site is being built. Reach out anytime.";
+  const url = "https://milktruck.io/";
+  const image = "https://milktruck.io/assets/logo-wordmark-blue.png";
+
   return [
-    { title: "Milktruck" },
-    { name: "description", content: "Milktruck — the full site is being built. Reach out anytime." },
+    { title },
+    { name: "description", content: description },
+    { property: "og:type", content: "website" },
+    { property: "og:title", content: title },
+    { property: "og:description", content: description },
+    { property: "og:url", content: url },
+    { property: "og:image", content: image },
+    { name: "twitter:card", content: "summary" },
+    { name: "twitter:title", content: title },
+    { name: "twitter:description", content: description },
+    { name: "twitter:image", content: image },
   ];
 }
 
@@ -70,7 +84,7 @@ export default function Home() {
         </div>
 
         <p className="hold-page__footnote">
-          This is a temporary page. The milktruck.io site is being built, reach out anytime.
+          This is a temporary page while the milktruck.io site is being built. Reach out anytime.
         </p>
       </main>
 
